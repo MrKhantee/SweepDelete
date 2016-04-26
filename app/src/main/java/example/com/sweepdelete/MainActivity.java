@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.ListIterator;
 
 import example.com.views.SweepDelete;
+//注释
+//在继承ViewGroup的基础上 没有使用之前在SlideView项目中的重写onTouchEvent方法的技术来实现侧滑 而是通过使用DragerHelp实现列表单个条目的侧滑出删除按钮，并实现删除条目的功能 同时通过自己的方法避免了可以同时滑动出多个条目的删除按钮 从而避免了 删除时的 iterator的bug 以及滑动出来一个条目的删除按钮后 如果滑动listview会出现其他的条目的删除按钮也出现的情况
 
 public class MainActivity extends AppCompatActivity {
     private ListView lv;
